@@ -239,6 +239,24 @@ Alias for the strings.Join function.
 services: {{join $services ","}}
 ```
 
+### add
+
+Adds two numbers. You must provide them as strings.
+
+```
+{{$level := getv "/cache/level"}}
+{{add $level "1"}}
+```
+
+### subtract
+
+Subtracts two numbers. You must provide them as strings.
+
+```
+{{$level := getv "/cache/level"}}
+{{subtract $level "1"}}
+```
+
 ## Example Usage
 
 ```Bash
